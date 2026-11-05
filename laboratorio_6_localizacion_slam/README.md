@@ -37,10 +37,10 @@ Los archivos de código fuente se encuentran organizados en la carpeta `scripts/
 
 Las grabaciones en tiempo real de las trayectorias dinámicas y la convergencia de los algoritmos están disponibles en los siguientes enlaces:
 
-* 🎬 **Parte 1 (Odometría Dinámica):** [Ver video en YouTube](PEGA_AQUI_EL_ENLACE_DE_YOUTUBE_DE_CLEYSON_1)
-* 🎬 **Parte 2 (EKF Predicción y Crecimiento de Incertidumbre):** [Ver video en YouTube](PEGA_AQUI_EL_ENLACE_DE_YOUTUBE_DE_CLEYSON_2)
-* 🎬 **Parte 3 (EKF con Corrección por Landmarks):** [Ver video en YouTube](PEGA_AQUI_EL_ENLACE_DE_YOUTUBE_DE_CLEYSON_3)
-* 🎬 **Parte 4 (EKF-SLAM Descubrimiento y Mapeo en Tiempo Real):** [Ver video en YouTube](PEGA_AQUI_EL_ENLACE_DE_YOUTUBE_DE_CLEYSON_4)
+* 🎬 **Parte 1 (Odometría Dinámica):** [Ver video en YouTube](https://youtu.be/4wWRN-S94Nk)
+* 🎬 **Parte 2 (EKF Predicción y Crecimiento de Incertidumbre):** [Ver video en YouTube](https://youtu.be/xUk7XJ4gZhA)
+* 🎬 **Parte 3 (EKF con Corrección por Landmarks):** [Ver video en YouTube](https://youtu.be/UyQhqJd7JJI)
+* 🎬 **Parte 4 (EKF-SLAM Descubrimiento y Mapeo en Tiempo Real):** [Ver video en YouTube](https://youtu.be/ldF7eufHWA8)
 
 ---
 
