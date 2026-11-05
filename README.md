@@ -43,6 +43,7 @@ A continuación se presentan los diferentes módulos prácticos desarrollados a 
 | **Capítulo 4: Modelado y Control** | Cinemática de modelo bicicleta y uniciclo, control Go-to-Goal, seguimiento de línea y persecución pura (*Pure Pursuit*). | TurtleBot3, `/cmd_vel`, `/odom`, Gazebo | [🔗 Ver Práctica](./capitulo_4_control_movil/) |
 | **Capítulo 5: De lo Reactivo a Nav2** | Vehículos de Braitenberg, evasión con Bug2, planificación $A^*$, Distance Transform e integración con Nav2. | Python, Algoritmos de Grafos, Nav2 Stack | [👉 **Ir al Laboratorio 5**](./laboratorio_5_navegacion/) |
 | **Capítulo 6: Localización y SLAM** | Deriva en odometría en lazo abierto, estimación con EKF (predicción), corrección con landmarks y EKF-SLAM completo. | Robotics Toolbox, EKF, Mapas de Balizas | [👉 **Ir al Laboratorio 6**](./laboratorio_6_localizacion_slam/) |
+| **Proyecto Final: Inspección Visual** | Robot móvil autónomo con cámara frontal para inspección industrial mediante ArUco, segmentación HSV y Nav2. | ROS 2 Jazzy, Gazebo Harmonic, OpenCV, TurtleBot3 | [👉 **Ir al Proyecto Final**](./proyecto_final_inspeccion_visual/) |
 
 ---
 
