@@ -58,3 +58,7 @@ A continuación se presentan los diferentes módulos prácticos desarrollados a 
 1. **Desarrollo Experimental:** Implementación de scripts base y formulación de casos de variación de parámetros para análisis de robustez estocástica.
 2. **Registro Audiovisual:** Animaciones y grabaciones dinámicas en tiempo real publicadas en canales de video para demostración de convergencia.
 3. **Documentación:** Respaldo completo de código y formulación de reportes técnicos formales en formato PDF.
+
+## 📄 Documentación Técnica
+El reporte académico formal con el marco matemático, las gráficas de soporte y las respuestas a las preguntas de análisis se encuentra catalogado en la carpeta de documentación:  
+👉 **[Ver Documentación y Reporte PDF](./documentacion/)**
