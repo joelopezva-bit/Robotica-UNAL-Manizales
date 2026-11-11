@@ -60,6 +60,9 @@ A continuación se presentan los diferentes módulos prácticos desarrollados a 
 2. **Registro Audiovisual:** Animaciones y grabaciones dinámicas en tiempo real publicadas en canales de video para demostración de convergencia.
 3. **Documentación:** Respaldo completo de código y formulación de reportes técnicos formales en formato PDF.
 
-## 📄 Documentación Técnica
-El reporte académico formal con el marco matemático, las gráficas de soporte y las respuestas a las preguntas de análisis se encuentra catalogado en la carpeta de documentación:  
-👉 **[Ver Documentación y Reporte PDF](./documentacion/)**
+## 📑 Documentación Técnica
+
+Los reportes académicos formales con el marco matemático, gráficas y análisis detallados se encuentran catalogados en sus respectivas carpetas:
+
+* 📄 **Laboratorio 5 (Navegación):** [👉 Ver Documentación y Reporte PDF](./laboratorio_5_navegacion/documentacion/)
+* 📄 **Laboratorio 6 (Localización y SLAM):** *(Reporte técnico en consolidación)*
