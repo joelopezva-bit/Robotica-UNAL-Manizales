@@ -31,7 +31,6 @@ Los archivos de código fuente se encuentran organizados en la carpeta `scripts/
 | `slam_variaciones.py` | Evaluación cuantitativa del impacto del ruido de sensor en el mapeo. | $W$ bajo vs $W$ alto |
 | `slam_animado.py` | Animación dinámica comparativa de SLAM y evolución de incertidumbre. | Panel multipanel $1\times 3$ |
 
----
 
 ## 🎥 Evidencias en Video (Demostraciones Dinámicas)
 
@@ -55,3 +54,46 @@ cd robotica-unal-manizales/laboratorio_6_localizacion_slam/scripts
 
 # 2. Ejecutar la simulación deseada (Ejemplo: SLAM Animado)
 python3 slam_animado.py
+
+
+---
+
+## 🚀 Parte 5 (Segunda Mitad): SLAM con Cartographer en ROS 2 Jazzy
+
+Esta sección complementa las simulaciones matemáticas iniciales desplegando un pipeline real de **Localización y Mapeo Simultáneo (SLAM)** utilizando **Cartographer**, integrado con el simulador **Gazebo Harmonic** y **RViz2** bajo el middleware **ROS 2 Jazzy Jalisco**.
+
+### 📂 Estructura del Paquete ROS 2 y Mapas
+
+Los archivos desarrollados para esta fase están separados de los scripts básicos y se ubican en la carpeta `paquete_ros2_slam/localization_lab/`:
+
+| Directorio / Archivo | Función en el Proyecto |
+| :--- | :--- |
+| `config/cartographer.lua` | Sintonización de SLAM 2D y definición de los marcos de referencia (`base_scan`, `odom`, `map`). |
+| `launch/cartographer.launch.py` | Orquestación paralela del nodo principal de Cartographer y la cuadrícula de ocupación (`occupancy_grid_node`). |
+| `localization_lab/simple_controller.py` | Controlador reactivo autónomo. Se suscribe al LiDAR (`/scan`), detecta obstáculos a $<0.5\text{ m}$ y ejecuta giros evasivos. |
+| `mapas_generados/` | Contiene el resultado final de la exploración (`my_map.pgm` y `my_map.yaml`). |
+
+### 🎥 Evidencias en Video (Implementación en ROS 2)
+
+Las demostraciones del entorno gráfico de Gazebo Harmonic, el controlador reactivo y la construcción del mapa están disponibles aquí:
+
+- 🎬 **Ejecución del Controlador Reactivo y Entorno Gazebo:** [Enlace pendiente - Video 1]
+- 🎬 **Prueba de Evasión Autónoma de Obstáculos:** [Enlace pendiente - Video 2]
+- 🎬 **Mapeo SLAM en Tiempo Real (RViz2):** [Enlace pendiente - Video 3]
+
+---
+
+## 📊 Instrucciones para Reproducir el Entorno ROS 2
+
+Para desplegar este sistema en Ubuntu 24.04, es necesario compilar el paquete en un *workspace* válido de ROS 2 y ejecutar los nodos en **5 terminales simultáneas** (asegurándose de ejecutar `source install/setup.bash` en cada una):
+
+**1. Despliegue de Simulación Física:**
+```bash
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+ros2 launch localization_lab cartographer.launch.py
+rviz2
+# (Configurar Fixed Frame a 'map' y agregar /map, /scan, TF y /submap_list)
+ros2 run localization_lab simple_controller
+ros2 run nav2_map_server map_saver_cli -f my_map
+
